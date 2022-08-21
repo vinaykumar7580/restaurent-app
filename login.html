@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container"></div>
+    <div id="login">
+        <h1>Login</h1>
+        <input type="text" id="login_username" placeholder="username">
+        <input type="password" id="login_password" placeholder="password">
+        <button onclick="Login()">Login</button>
+
+    </div>
+    
+</body>
+</html>
+<script type="module">
+    import navbar from './components/navbar.js'
+    let container=document.querySelector("#container");
+        container.innerHTML= navbar()
+
+</script>
+<script>
+     let Login=async ()=>{
+        let username=document.querySelector("#login_username").value;
+        let password=document.querySelector("#login_password").value;
+
+        let send_data={
+            username,
+            password
+        }
+        let res=await fetch(`https://masai-api-mocker.herokuapp.com/auth/login`,{
+            method:'POST',
+            body:JSON.stringify(send_data),
+
+            headers: {
+                'Content-Type':'application/json'
+            }
+        })
+        let data=await res.json();
+        username=send_data.username;
+        //getProfile(username,data.token)
+        saveToken(username,data.token,10000)
+        console.log("data",data);
+
+        // if(data.error==false){
+        //     alert("Login successfully")
+        window.location.href="admin.html";
+
+        // }else{
+        //     alert("Try again");
+            
+        // }
+       
+    }
+
+    // let getProfile=async(username,token)=>{
+
+    //     let res=await fetch(`https://masai-api-mocker.herokuapp.com/user/${username}`,{
+    //         method:'GET',
+
+    //         headers: {
+    //             'Content-Type':'application/json',
+    //             Authorization: `Bearer ${token}`
+    //         }
+
+    //     })
+    //     let data=await res.json();
+    //     console.log("data",data);
+
+    // }
+    let saveToken=(username,token,time)=>{
+        let user={
+            username,
+            token
+        }
+        localStorage.setItem('user_details',JSON.stringify(user));
+
+        setTimeout(function(){
+            localStorage.setItem('user_details',JSON.stringify(null))
+
+        },time)
+    }
+</script>

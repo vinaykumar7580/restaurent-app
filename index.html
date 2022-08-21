@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container"></div>
+    <div id="signUp">
+        <h1>Sign up</h1>
+        <input type="text" id="name" placeholder="name">
+        <input type="text" id="email" placeholder="emil">
+        <input type="text" id="username" placeholder="username">
+        <input type="password" id="password" placeholder="password">
+        <input type="text" id="mobile" placeholder="mobile">
+        <input type="text" id="description" placeholder="description">
+        <button onclick="Register()">Sign up</button>
+    </div>
+</body>
+</html>
+<script type="module">
+    import navbar from './components/navbar.js';
+    let container=document.querySelector("#container");
+    container.innerHTML= navbar();
+
+</script>
+
+<script>
+    let Register=async ()=>{
+        let name=document.querySelector("#name").value;
+        let email=document.querySelector("#email").value;
+        let username=document.querySelector("#username").value;
+        let password=document.querySelector("#password").value;
+        let mobile=document.querySelector("#mobile").value;
+        let description=document.querySelector("#description").value;
+
+        let register_data={
+            name,
+            email,
+            username,
+            password,
+            mobile,
+            description
+            
+        }
+        //https://github.com/masai-school/api-mocker.wiki.git
+        let res=await fetch(`https://masai-api-mocker.herokuapp.com/auth/register`,{
+            method:'POST',
+
+            body:JSON.stringify(register_data),
+            headers: {
+                'Content-Type':'application/json'
+            }
+        });
+        let data=await res.json();
+        console.log("data",data);
+        
+
+    }
+
+   
+
+</script>

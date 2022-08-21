@@ -1,0 +1,64 @@
+#navbar{
+    height:150px;
+    background-color: blueviolet;
+    padding-left:70px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#option{
+    padding-right: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap:100px;
+}
+a{
+    color:black;
+    text-decoration-line: none;
+}
+#navbar>h1{
+    color:orange
+}
+#signUp{
+    height: 300px;
+    width:20%;
+    text-align: center;
+    margin:auto;
+    display:grid;
+}
+#login{
+    height: 180px;
+    width:15%;
+    text-align: center;
+    margin:auto;
+    display:grid;
+
+}
+.product{
+    text-align: center;
+    width:20%;
+    margin:auto;
+    display:grid
+}
+#buttons{
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom:10px
+}
+#displayData{
+    width:70%;
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:30px;
+}
+img{
+    width:100%;
+}
+#sorting{
+    margin-top: 10px;
+    margin-left: 50px;
+    height:20px;
+}

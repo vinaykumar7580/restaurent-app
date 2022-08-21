@@ -1,0 +1,191 @@
+{
+  "posts": [
+    {
+      "id": 2,
+      "title": "web 19",
+      "author": "golu"
+    },
+    {
+      "id": "4",
+      "title": "diwali",
+      "author": "pawan",
+      "update": "hii"
+    },
+    {
+      "id": "1",
+      "title": "hello pawan",
+      "author": "pawan"
+    },
+    {
+      "id": "5",
+      "title": "hello vinay",
+      "author": "hii"
+    },
+    {
+      "id": "3",
+      "title": "hdjjsdhjjjdkkdskkdkksd",
+      "author": "djdjdjjdj"
+    },
+    {
+      "id": "6",
+      "title": "hdhdhjsdjjdsajjdsjdsnjdsjdsoodsodsodsjhjdo",
+      "author": "djdjdjjdjjd"
+    },
+    {
+      "id": "7",
+      "title": "hdhdhjsdjjdsajjdsjdsnjdsjdsoodsodsodsjhjdo",
+      "author": "djdjdjjdjjd"
+    },
+    {
+      "id": "8",
+      "title": "hdhdhjsdjjdsajjdsjdsnjdsjdsoodsodsodsjhjdo",
+      "author": "djdjdjjdjjd"
+    },
+    {
+      "id": "9",
+      "title": "hdhdhjsdjjdsajjdsjdsnjdsjdsoodsodsodsjhjdo",
+      "author": "djdjdjjdjjd"
+    },
+    {
+      "id": "10",
+      "title": "hdhdhjsdjjdsajjdsjdsnjdsjdsoodsodsodsjhjdo",
+      "author": "djdjdjjdjjd"
+    },
+    {
+      "id": "11",
+      "title": "hdhdhjsdjjdsajjdsjdsnjdsjdsoodsodsodsjhjdo",
+      "author": "djdjdjjdjjd"
+    },
+    {
+      "id": "12",
+      "title": "hdhdhjsdjjdsajjdsjdsnjdsjdsoodsodsodsjhjdo",
+      "author": "djdjdjjdjjd"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  },
+  "menu": [
+    {
+      "id": "1",
+      "title": "Biryani",
+      "image": "https://media.gettyimages.com/photos/fish-biryani-picture-id991925098?k=20&m=991925098&s=612x612&w=0&h=_HXkw8lYnMBTN0boNpkDv8ULdx9qDJVSEAbGebEUw6g=",
+      "description": "garam biryani",
+      "price": "154",
+      "ratings": "5"
+    },
+    {
+      "id": "2",
+      "title": "Veg Biryani",
+      "image": "https://media.gettyimages.com/photos/fish-biryani-picture-id991925098?k=20&m=991925098&s=612x612&w=0&h=_HXkw8lYnMBTN0boNpkDv8ULdx9qDJVSEAbGebEUw6g=",
+      "description": "garam biryani",
+      "price": "170",
+      "ratings": "6"
+    },
+    {
+      "id": "3",
+      "title": "Dam Biryani",
+      "image": "https://media.gettyimages.com/photos/fish-biryani-picture-id991925098?k=20&m=991925098&s=612x612&w=0&h=_HXkw8lYnMBTN0boNpkDv8ULdx9qDJVSEAbGebEUw6g=",
+      "description": "dam biryani",
+      "price": "210",
+      "ratings": "7"
+    },
+    {
+      "id": "4",
+      "title": "Hedrabadi Biryani",
+      "image": "https://media.gettyimages.com/photos/fish-biryani-picture-id991925098?k=20&m=991925098&s=612x612&w=0&h=_HXkw8lYnMBTN0boNpkDv8ULdx9qDJVSEAbGebEUw6g=",
+      "description": "hedrabadi biryani",
+      "price": "250",
+      "ratings": "6"
+    },
+    {
+      "id": "5",
+      "title": "Hedrabadi Biryani",
+      "image": "https://media.gettyimages.com/photos/fish-biryani-picture-id991925098?k=20&m=991925098&s=612x612&w=0&h=_HXkw8lYnMBTN0boNpkDv8ULdx9qDJVSEAbGebEUw6g=",
+      "description": "hedrabadi biryani",
+      "price": "270",
+      "ratings": "5"
+    },
+    {
+      "id": "6",
+      "title": "dosa",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.UnzVguHKK46HApmyskXk3gHaE8&pid=Api&rs=1&c=1&qlt=95&w=159&h=106",
+      "description": "dosa",
+      "price": "290",
+      "ratings": "7"
+    },
+    {
+      "id": "7",
+      "title": "dosa",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.UnzVguHKK46HApmyskXk3gHaE8&pid=Api&rs=1&c=1&qlt=95&w=159&h=106",
+      "description": "dosa",
+      "price": "230",
+      "ratings": "9"
+    },
+    {
+      "id": "8",
+      "title": "dosa",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.UnzVguHKK46HApmyskXk3gHaE8&pid=Api&rs=1&c=1&qlt=95&w=159&h=106",
+      "description": "dosa",
+      "price": "250",
+      "ratings": "8"
+    },
+    {
+      "id": "9",
+      "title": "dosa",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.UnzVguHKK46HApmyskXk3gHaE8&pid=Api&rs=1&c=1&qlt=95&w=159&h=106",
+      "description": "dosa",
+      "price": "270",
+      "ratings": "7"
+    },
+    {
+      "id": "10",
+      "title": "dosa",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.UnzVguHKK46HApmyskXk3gHaE8&pid=Api&rs=1&c=1&qlt=95&w=159&h=106",
+      "description": "dosa",
+      "price": "290",
+      "ratings": "6"
+    },
+    {
+      "id": "11",
+      "title": "dosa",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.UnzVguHKK46HApmyskXk3gHaE8&pid=Api&rs=1&c=1&qlt=95&w=159&h=106",
+      "description": "dosa",
+      "price": "310",
+      "ratings": "7"
+    },
+    {
+      "id": "12",
+      "title": "dosa",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.UnzVguHKK46HApmyskXk3gHaE8&pid=Api&rs=1&c=1&qlt=95&w=159&h=106",
+      "description": "dosa",
+      "price": "340",
+      "ratings": "6"
+    },
+    {
+      "id": "13",
+      "title": "dosa",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.UnzVguHKK46HApmyskXk3gHaE8&pid=Api&rs=1&c=1&qlt=95&w=159&h=106",
+      "description": "dosa",
+      "price": "360",
+      "ratings": "5"
+    },
+    {
+      "id": "15",
+      "title": "dosa",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.UnzVguHKK46HApmyskXk3gHaE8&pid=Api&rs=1&c=1&qlt=95&w=159&h=106",
+      "description": "dosa",
+      "price": "380",
+      "ratings": "7"
+    },
+    {
+      "id": "16",
+      "title": "biryani",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.sGXTMgzpyHaJT3yMn5T-4gHaEU&pid=Api&rs=1&c=1&qlt=95&w=165&h=96",
+      "description": "hii",
+      "price": "157",
+      "ratings": "8"
+    }
+  ]
+}

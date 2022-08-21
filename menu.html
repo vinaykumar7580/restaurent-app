@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="display"></div>
+    <div>
+        <select name="" id="sorting">
+            <option value="sortlow">sorting low price</option>
+            <option value="sorthigh">sorting high price</option>
+        </select>
+        
+    </div>
+    <div id="buttons"></div>
+    <div id="displayData"></div>
+    
+</body>
+</html>
+<script type="module">
+     import navbar from './components/navbar.js'
+    let display=document.querySelector("#display");
+        display.innerHTML= navbar()
+</script>
+
+<script>
+    let data;
+    const getData=async (page_number)=>{
+       try{
+        let res=await fetch(`http://localhost:3000/menu?_page=${page_number}&_limit=5`)
+        data=await res.json();
+        console.log("data",data);
+        appendData(data);
+
+        
+
+       }catch(err){
+        console.log("err",err);
+       }
+    }
+getData();
+
+    let displayData=document.querySelector("#displayData");
+    let appendData=(data)=>{
+        displayData.innerHTML=null;
+        data.forEach((ele)=>{
+            let div=document.createElement("div");
+            let img=document.createElement("img");
+                img.src=ele.image;
+            let title=document.createElement("p");
+                title.innerText=`Item:- ${ele.title}`;
+            let desc=document.createElement("p");
+                desc.innerText=`Description:- ${ele.description}`;
+            let price=document.createElement("p");
+                price.innerText=`Price:- ${ele.price}`;
+            let ratings=document.createElement("p");
+                ratings.innerText=`Rating:- ${ele.ratings}`;
+            div.append(img,title,desc,price,ratings)
+            displayData.append(div);
+        })
+
+    }
+
+    let buttons_div=document.querySelector("#buttons");
+    const showButtons=(results,per_page)=>{
+        // let results=12
+        // let per_page=3
+
+        let buttons=Math.ceil(results/per_page);
+
+        for(let i=1; i<=buttons; i++){
+            let button=document.createElement("button")
+            button.innerText=i;
+            button.onclick= function(){
+                getData(i)
+
+            }
+
+            buttons_div.append(button);
+
+        }
+
+    }
+    showButtons(12,3)
+
+  document.querySelector("#sorting").addEventListener("change",handleSalary)
+  function handleSalary(){
+    let selected=document.querySelector("#sorting").value;
+    if(selected=="sortlow"){
+        data.sort(function (a,b){
+            return a.price-b.price
+        })
+        appendData(data)
+    }
+    if(selected=="sorthigh"){
+        data.sort(function (a,b){
+            return b.price-a.price
+        })
+        appendData(data)
+
+    }
+  }
+  
+
+    
+</script>
